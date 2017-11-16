@@ -5,7 +5,7 @@
 	or page.title == "Contests" 
 	or page.title == "Teaching" 
    	or page.title == "Tags"
-%}{% assign showHeader = true %}{% endif %}
+%}{% assign showMinHeader = true %}{% endif %}
 
 {% for post in site.posts %}	
 	{% for tag in post.tags %}
