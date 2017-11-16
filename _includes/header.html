@@ -36,10 +36,15 @@
 {% endif %}
 
 {% if showMinHeader == true %}
+    <span class="link">
+        <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+    </span>
     <header class="header-home {% if site.animation %}animated{% endif %}">
         <h1 class="title">{{ page.title }}</h1>
         <!--{% include social-links.html %}-->
     </header>
+    <p></p>
+    <p></p>
 {% endif %}
 
 {% include nav.html %}
