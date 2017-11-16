@@ -5,6 +5,7 @@ layout: page
 
 <!--![Profile Image]({{ site.url }}/{{ site.picture }})-->
 
+<h2> Online Programming Contests </h2>
 
 <p> Codeforces: <a href="http://codeforces.com/profile/kjp4155" > kjp4155</a>(Top rating: 2242)</p>
 <p> Topcoder: </p>
