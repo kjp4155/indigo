@@ -3,7 +3,7 @@ name: Jinpyo Kim
 bio: 'Computer Science, Algorithm'
 
 # twitter summary info
-description: A blog about Physics and teaching science
+# description: A blog about Physics and teaching science
 
 # if it's an external image, update below for true
 # better with square images
@@ -35,7 +35,7 @@ highlighter: rouge
 # spotify: myspotify
 github: JinpyoKim
 # medium: medium
-email: kjp4155@google.com
+email: kjp4155@gmail.com
 
 authors:
     JinpyoKim:
