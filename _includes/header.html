@@ -1,11 +1,13 @@
 {% if page.title == "Home"%}{% assign showHeader = true %}{% endif %}
 
-{% if page.title == "About" 
-    or page.title == "Projects" 
-    or page.title == "Contests" 
-    or page.title == "Teaching" 
-    or page.title == "Tags"
-%}{% assign showMinHeader = true %}{% endif %}
+{% if page.title = "About"
+%}{% assign showAboutHeader = true %}{% endif %}
+
+{% if page.title = "Contests"
+%}{% assign showContestHeader = true %}{% endif %}
+
+{% if page.title = "Projects"
+%}{% assign showProjectHeader = true %}{% endif %}
 
 
 {% for post in site.posts %}	
@@ -35,10 +37,13 @@
     </header>
 {% endif %}
 
-{% if showMinHeader == true %}
+{% if showAboutHeader == true %}
     <span class="link">
-        <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+        <img class="selfie" width="300" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}"
+        style = "width: 200px;"
+         />
     </span>
+    <p></p>
     <header class="header-home {% if site.animation %}animated{% endif %}">
         <h1 class="title">{{ page.title }}</h1>
         <!--{% include social-links.html %}-->
