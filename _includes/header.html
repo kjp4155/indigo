@@ -42,14 +42,47 @@
         <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" style = "width: 200px;"/> 
     </span>
 
-    <div heigh="50"></div>
+    <div style="height: 10px;"></div>
 
     <header class="header-home {% if site.animation %}animated{% endif %}">
         <h1 class="title">{{ page.title }}</h1>
         <!--{% include social-links.html %}-->
     </header>
-
- 
 {% endif %}
+
+{% if showContestHeader == true %}
+    <span class="link">
+        <img class="selfie" alt="{{ site.name }}" src="./../assets/images/papers.jpg" style = "width: 200px;"/> 
+    </span>
+
+    <div style="height: 10px;"></div>
+
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        <h1 class="title">{{ page.title }}</h1>
+        <!--{% include social-links.html %}-->
+    </header>
+{% endif %}
+
+{% if showProjectHeader == true %}
+    <span class="link">
+        <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" style = "width: 200px;"/> 
+    </span>
+
+    <div style="height: 10px;"></div>
+
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        <h1 class="title">{{ page.title }}</h1>
+        <!--{% include social-links.html %}-->
+    </header>
+{% endif %}
+
+
+
+
+
+
+
+
+
 
 {% include nav.html %}
