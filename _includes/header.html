@@ -39,9 +39,7 @@
 
 {% if showAboutHeader == true %}
     <span class="link">
-        <img class="selfie" width="300" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}"
-        style = "width: 200px;"
-         />
+        <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" style = "width: 200px;"/> 
     </span>
     <header class="header-home {% if site.animation %}animated{% endif %}">
         <h1 class="title">{{ page.title }}</h1>
