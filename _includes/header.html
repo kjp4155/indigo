@@ -1,12 +1,12 @@
 {% if page.title == "Home"%}{% assign showHeader = true %}{% endif %}
 
-{% if page.title = "About"
+{% if page.title == "About"
 %}{% assign showAboutHeader = true %}{% endif %}
 
-{% if page.title = "Contests"
+{% if page.title == "Contests"
 %}{% assign showContestHeader = true %}{% endif %}
 
-{% if page.title = "Projects"
+{% if page.title == "Projects"
 %}{% assign showProjectHeader = true %}{% endif %}
 
 
@@ -43,11 +43,11 @@
         style = "width: 200px;"
          />
     </span>
-    <p></p>
     <header class="header-home {% if site.animation %}animated{% endif %}">
         <h1 class="title">{{ page.title }}</h1>
         <!--{% include social-links.html %}-->
     </header>
+
     <p></p>
     <p></p>
 {% endif %}
