@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 
-![Profile Image]({{ site.url }}/{{ site.picture }})
+<!--![Profile Image]({{ site.url }}/{{ site.picture }})-->
 
 <p> Codeforces: <a href="http://codeforces.com/profile/kjp4155" > kjp4155 </a> </p>
 <p> Topcoder: </p>
