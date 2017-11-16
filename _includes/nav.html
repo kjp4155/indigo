@@ -6,7 +6,7 @@
             </li>
         {% endif %}
         
-         {% if site.about == true %}
+        {% if site.about == true %}
             {% if page.title != "About" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/about">About</a>
@@ -14,15 +14,16 @@
             {% endif %}
         {% endif %}
 
+        <p></p>
         {% if site.about == true %}
-            {% if page.title != "Contests" %}
-                <p> asdfasdsa </p>
+            {% if page.title != "Competitive Programming Contests" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/contests">Contests</a>
                 </li>
             {% endif %}
         {% endif %}
 
+        <p></p>
         {% if site.projects == true %}
             {% if page.title != "Projects" %}
                 <li class="item">
