@@ -5,9 +5,7 @@ layout: page
 
 
 <!--![Profile Image]({{ site.url }}/{{ site.picture }})-->
-Test page!
 
-<a href="./../processing_projects/sample.html"> My Sample Project! </a>
+<h2> Processing Projects </h2>
 
-<script type="text/javascript" src="./../pde_codes/processing.js"></script>
-<canvas id="mysketch" data-processing-sources="./../pde_codes/sample.pde"/></canvas>
+<p> Sample Project: <a href="./../processing_projects/sample.html"> My Sample Project! </a> </p>
