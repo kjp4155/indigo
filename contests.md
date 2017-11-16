@@ -11,7 +11,7 @@ layout: page
 <p> Topcoder: </p>
 <p> Atcoder: </p>
 
-<h1> 2017 </h1>
+<h2> 2017 </h2>
 
 <p> ACM-ICPC Daejeon Regional - 3rd place (6등, Special prize from Nexon) </p>
 <p> LG Code monster - 3rd place award (3등상) </p>
@@ -21,7 +21,7 @@ layout: page
 
 
 
-<h1> 2016 </h1>
+<h2> 2016 </h2>
 
 <p> ACM-ICPC Daejeon Regional - 7th place </p>
 <p> UCPC 2016 - 4th place </p>
