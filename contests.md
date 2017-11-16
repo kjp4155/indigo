@@ -10,9 +10,12 @@ layout: page
 <p> Topcoder: </p>
 <p> Atcoder: </p>
 
-<h2> 2017 </h2>
-<p> ICPC Daejeon Regional 2017 - 3rd place </p>
+<h1> 2017 </h1>
+<p> ICPC Daejeon Regional 2017 - 3rd place - Nexon Special prize </p>
+<p> LG Code monster - 3rd place award (3등상) </p>
+<p> SCPC onsite final </p>
+<p> Google Code Jam Round3 - 182th place </p>
 
 <h1> 2016 </h1>
+<p> ICPC Daejeon Regional 2016 - 7th place </p>
 
-<h3> 2015 </h3>
