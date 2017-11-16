@@ -12,7 +12,7 @@ layout: page
 
 <h1> 2017 </h1>
 
-<p> <strong>ACM-ICPC Daejeon Regional</strong> - 3rd place (6등, Special prize from Nexon) </p>
+<p> ACM-ICPC Daejeon Regional - 3rd place (6등, Special prize from Nexon) </p>
 <p> LG Code monster - 3rd place award (3등상) </p>
 <p> Google Code Jam Round3 - 182th place </p>
 <p> Kakao Code Festival onsite final </p>
