@@ -18,7 +18,7 @@ layout: page
 <p> Google Code Jam Round3 - 182th place </p>
 <p> Kakao Code Festival onsite final </p>
 <p> SCPC onsite final </p>
-
+<p> Elice Code Challange - 3rd place </p>
 
 
 <h2> 2016 </h2>
