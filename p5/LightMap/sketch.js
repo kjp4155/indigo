@@ -120,7 +120,7 @@ function preload(){
 }
 
 function setup() {
-  var canvas = createCanvas(1920, 1080);
+  var canvas = createCanvas(1200, 700);
   canvas.parent('sketch-holder');
   frameRate(3);
   background(0);
@@ -156,9 +156,9 @@ function draw() {
       if ( stat[x][y] == 4 ) fill(0, 125, 125);
       if ( stat[x][y] > 10 ) fill(120,60,200);
       var t = stat[x][y];
-      dotr = 7;
+      dotr = 6;
       fill(t*30,t*30,t*30);
-      if ( map[y][x] == 1 ) ellipse(10+x*11, 10+y*11, dotr, dotr);
+      if ( map[y][x] == 1 ) ellipse(10+x*10, 10+y*10, dotr, dotr);
       //ellipse(10+x*10, 10+y*10, dotr, dotr);
     }
   }
