@@ -93,12 +93,7 @@ function setStatus() {
     for (var y=0; y<N; y++) {
       var tmp = 99999999;
       stat[x][y] = 100;
-      /*
-      tmp = curtime-dawn[x][y]; if( tmp < 0 ) tmp += dsecs;
-      if( tmp < mn ){
-        mn = tmp; stat[x][y] = 1;
-      }
-      */
+     
       if( dawn[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-dawn[x][y]));
       if( dusk[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-dusk[x][y]));
       if( goldenHour[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-goldenHour[x][y]));
