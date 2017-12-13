@@ -1,28 +1,28 @@
 /* style.css */
 
 html, body {
-  height: 100%;
   width: 100%;
-
 }
 
 body {
   margin: 0;
-  display: flex;
-  display:inline-block;
+  display: inline-block;
   /* This centers our sketch horizontally. */
   justify-content: center;
 
-  /* This centers our sketch vertically. */
-  align-items: center;
 }
 
 #sketch-holder{
-	display:inline-block;
+	margin: 0 auto;
+	margin-top: 10%;
+	width: 400px;
+	height: 300px;
+	background-color: blue;
 }
 
 #clock-holder{
-	display:inline-block;
+	width: 15%;
+	margin: 0 auto;
 	color: white;
 	font-size: 30px;
 }
