@@ -73,6 +73,7 @@ function setStatus() {
   var d = new Date();
   var curtime = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds()*1800;
   curtime = curtime % (24*3600);
+  console.log(curtime);
   for (var x=0; x<M; x++) {
     for (var y=0; y<N; y++) {
       var tmp = 99999999;
