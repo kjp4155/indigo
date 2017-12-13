@@ -158,8 +158,7 @@ function draw() {
       var t = stat[x][y];
      
       fill(t*30,t*30,t*30);
-      dotr = 10;
-      if ( map[y][x] == 1 ) ellipse(15+x*18, 15+y*18, dotr, dotr);
+      if ( map[y][x] == 1 ) ellipse(10+x*10, 10+y*10, dotr, dotr);
       //ellipse(10+x*10, 10+y*10, dotr, dotr);
     }
   }
