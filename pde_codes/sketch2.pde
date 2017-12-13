@@ -131,7 +131,6 @@ void draw() {
       if ( status[x][y] == 4 ) fill(0, 125, 125);
       if ( status[x][y] > 10 ) fill(120,60,200);
       int t = status[x][y];
-      if( x == 30 && y == 30 ) println("!");
       fill(t*30,t*30,t*30);
       if ( map[y][x] == 1 ) ellipse(10+x*10, 10+y*10, dotr, dotr);
       //ellipse(10+x*10, 10+y*10, dotr, dotr);
