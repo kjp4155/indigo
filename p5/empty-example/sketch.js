@@ -84,8 +84,10 @@ function timeDataParsing() {
   }
 }
 
+
 function setStatus() {
-  var curtime = hour()*3600 + minute()*60 + second()*1800;
+  var d = new Date();
+  var curtime = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds()*1800;
   
   for (var x=0; x<M; x++) {
     for (var y=0; y<N; y++) {
@@ -97,35 +99,35 @@ function setStatus() {
         mn = tmp; status[x][y] = 1;
       }
       */
-      if( dawn[x][y] != -1 ) tmp = min(tmp,abs(curtime-dawn[x][y]));
-      if( dusk[x][y] != -1 ) tmp = min(tmp,abs(curtime-dusk[x][y]));
-      if( goldenHour[x][y] != -1 ) tmp = min(tmp,abs(curtime-goldenHour[x][y]));
-      if( goldenHourEnd[x][y] != -1 ) tmp = min(tmp,abs(curtime-goldenHourEnd[x][y]));
-      if( nadir[x][y] != -1 ) tmp = min(tmp,abs(curtime-nadir[x][y]));
-      if( nauticalDawn[x][y] != -1 ) tmp = min(tmp,abs(curtime-nauticalDawn[x][y]));
-      if( nauticalDusk[x][y] != -1 ) tmp = min(tmp,abs(curtime-nauticalDusk[x][y]));
-      if( night[x][y] != -1 ) tmp = min(tmp,abs(curtime-night[x][y]));
-      if( nightEnd[x][y] != -1 ) tmp = min(tmp,abs(curtime-nightEnd[x][y]));
-      if( solarNoon[x][y] != -1 ) tmp = min(tmp,abs(curtime-solarNoon[x][y]));
-      if( sunrise[x][y] != -1 ) tmp = min(tmp,abs(curtime-sunrise[x][y]));
-      if( sunriseEnd[x][y] != -1 ) tmp = min(tmp,abs(curtime-sunriseEnd[x][y]));
-      if( sunset[x][y] != -1 ) tmp = min(tmp,abs(curtime-sunset[x][y]));
-      if( sunsetStart[x][y] != -1 ) tmp = min(tmp,abs(curtime-sunsetStart[x][y]));
+      if( dawn[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-dawn[x][y]));
+      if( dusk[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-dusk[x][y]));
+      if( goldenHour[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-goldenHour[x][y]));
+      if( goldenHourEnd[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-goldenHourEnd[x][y]));
+      if( nadir[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-nadir[x][y]));
+      if( nauticalDawn[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-nauticalDawn[x][y]));
+      if( nauticalDusk[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-nauticalDusk[x][y]));
+      if( night[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-night[x][y]));
+      if( nightEnd[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-nightEnd[x][y]));
+      if( solarNoon[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-solarNoon[x][y]));
+      if( sunrise[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-sunrise[x][y]));
+      if( sunriseEnd[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-sunriseEnd[x][y]));
+      if( sunset[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-sunset[x][y]));
+      if( sunsetStart[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-sunsetStart[x][y]));
       
-      if( tmp == abs(curtime-sunrise[x][y] ) ) status[x][y] = 4;
-      if( tmp == abs(curtime-sunriseEnd[x][y] ) ) status[x][y] = 3;
-      if( tmp == abs(curtime-goldenHourEnd[x][y] ) ) status[x][y] = 2;
-      if( tmp == abs(curtime-solarNoon[x][y] ) ) status[x][y] = 1;
-      if( tmp == abs(curtime-goldenHour[x][y] ) ) status[x][y] = 0;
-      if( tmp == abs(curtime-sunsetStart[x][y] ) ) status[x][y] = 1;
-      if( tmp == abs(curtime-sunset[x][y] ) ) status[x][y] = 2;
-      if( tmp == abs(curtime-dusk[x][y] ) ) status[x][y] = 3;
-      if( tmp == abs(curtime-nauticalDusk[x][y] ) ) status[x][y] = 4;
-      if( tmp == abs(curtime-night[x][y] ) ) status[x][y] = 5;
-      if( tmp == abs(curtime-nadir[x][y] ) ) status[x][y] = 6;
-      if( tmp == abs(curtime-nightEnd[x][y] ) ) status[x][y] = 7;
-      if( tmp == abs(curtime-nauticalDawn[x][y] ) ) status[x][y] = 6;
-      if( tmp == abs(curtime-dawn[x][y] ) ) status[x][y] = 5;
+      if( tmp == Math.abs(curtime-sunrise[x][y] ) ) status[x][y] = 4;
+      if( tmp == Math.abs(curtime-sunriseEnd[x][y] ) ) status[x][y] = 3;
+      if( tmp == Math.abs(curtime-goldenHourEnd[x][y] ) ) status[x][y] = 2;
+      if( tmp == Math.abs(curtime-solarNoon[x][y] ) ) status[x][y] = 1;
+      if( tmp == Math.abs(curtime-goldenHour[x][y] ) ) status[x][y] = 0;
+      if( tmp == Math.abs(curtime-sunsetStart[x][y] ) ) status[x][y] = 1;
+      if( tmp == Math.abs(curtime-sunset[x][y] ) ) status[x][y] = 2;
+      if( tmp == Math.abs(curtime-dusk[x][y] ) ) status[x][y] = 3;
+      if( tmp == Math.abs(curtime-nauticalDusk[x][y] ) ) status[x][y] = 4;
+      if( tmp == Math.abs(curtime-night[x][y] ) ) status[x][y] = 5;
+      if( tmp == Math.abs(curtime-nadir[x][y] ) ) status[x][y] = 6;
+      if( tmp == Math.abs(curtime-nightEnd[x][y] ) ) status[x][y] = 7;
+      if( tmp == Math.abs(curtime-nauticalDawn[x][y] ) ) status[x][y] = 6;
+      if( tmp == Math.abs(curtime-dawn[x][y] ) ) status[x][y] = 5;
     }
   }
 }
@@ -158,8 +160,8 @@ function setup() {
       map[i][j] = lines[i].charCodeAt(j) - 48;
     }
   }
-  println("N = " + N + " M = " + M);
-  println( "" + hour() + " : " + minute() + " : " + second() );
+  //println("N = " + N + " M = " + M);
+  //println( "" + hour() + " : " + minute() + " : " + second() );
 
   timeDataParsing();
   setStatus();
