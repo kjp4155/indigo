@@ -92,7 +92,6 @@ function setStatus() {
   for (var x=0; x<M; x++) {
     for (var y=0; y<N; y++) {
       var tmp = 99999999;
-      console.log(x + " " + y + " " + stat[x][y]);
       stat[x][y] = 100;
       /*
       tmp = curtime-dawn[x][y]; if( tmp < 0 ) tmp += dsecs;
@@ -163,7 +162,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1200, 900);
+  createCanvas(1600, 800);
   //init();
   frameRate(3);
   background(0);
@@ -173,12 +172,6 @@ function setup() {
   x = 50; 
   y = 50;
   N = floor(lines.length);
-  console.log(lines);
-  for(var i in lines){
-    console.log(i);
-  }
-  console.log(lines.length);
-  console.log(lines[1]);
   M = lines[0].length;
   for (var i=0; i<lines.length; i++) {
     for (var j=0; j<lines[i].length; j++) {
