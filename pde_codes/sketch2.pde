@@ -121,6 +121,7 @@ void setup() {
 }
 
 void draw() {
+  println("!");
   setStatus();
   for (int x=0; x<M; x++) {
     for (int y=0; y<N; y++) {
