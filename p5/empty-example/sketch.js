@@ -163,8 +163,9 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1980, 1020);
+  createCanvas(1200, 900);
   //init();
+  frameRate(3);
   background(0);
   pixelDensity(displayDensity());
   stroke(255);
