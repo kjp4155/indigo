@@ -19,22 +19,6 @@ var sunsetStart = [];
 var stat = [];
 
 function init(){
-	map = [];
-	dawn = [];
-	dusk = [];
-	goldenHour = [];
-	goldenHourEnd = [];
-	nadir = [];
-	nauticalDawn = [];
-	nauticalDusk = [];
-	night = [];
-	nightEnd = [];
-	solarNoon = [];
-	sunrise = [];
-	sunriseEnd = [];
-	sunset = [];
-	sunsetStart = [];
-	stat = [];
 	for( var i = 0; i < 200; i ++){
 		map[i] = [];
 		dawn[i] = [];
@@ -128,29 +112,8 @@ function setStatus() {
 }
 var lines;
 function preload(){
-  for( var i = 0; i < 200; i ++){
-    map[i] = [];
-    dawn[i] = [];
-    dusk[i] = [];
-    goldenHour[i] = [];
-    goldenHourEnd[i] = [];
-    nadir[i] = [];
-    nauticalDawn[i] = [];
-    nauticalDusk[i] = [];
-    night[i] = [];
-    nightEnd[i] = [];
-    solarNoon[i] = [];
-    sunrise[i] = [];
-    sunriseEnd[i] = [];
-    sunset[i] = [];
-    sunsetStart[i] = [];
-    stat[i] = [];
-  }
-  for( var i = 0 ; i < 200 ; i ++ ){
-    for( var j = 0 ; j < 200 ; j ++ ){
-      stat[i][j] = 0;
-    }
-  }
+  init();
+
   // Get map data
   lines = loadStrings("./mapmap.txt");
   maplines = loadStrings("./res.txt");
