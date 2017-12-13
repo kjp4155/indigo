@@ -97,7 +97,7 @@ void setStatus() {
 void setup() {
   size(1980, 1020);
   background(0);
-  pixelDensity(displayDensity());
+  //pixelDensity(displayDensity());
   stroke(255);
 
   x = 50; 
