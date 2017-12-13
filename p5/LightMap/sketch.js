@@ -157,7 +157,7 @@ function draw() {
       if ( stat[x][y] > 10 ) fill(120,60,200);
       var t = stat[x][y];
       dotr = 3;
-      fill(t*30,t*30,t*30);
+      fill(t*40,t*40,t*40);
       if ( map[y][x] == 1 ) ellipse(10+x*5, 10+y*5, dotr, dotr);
       //ellipse(10+x*10, 10+y*10, dotr, dotr);
     }
