@@ -1,5 +1,10 @@
 /* style.css */
 
+@font-face{
+	font-family: helvetica-neue-bold;
+	src: url('./helveticaneue_bold.ttf');
+}
+
 html, body {
   width: 100%;
 }
@@ -9,20 +14,22 @@ body {
   display: inline-block;
   /* This centers our sketch horizontally. */
   justify-content: center;
-
+  text-align: center;
 }
 
 #sketch-holder{
 	margin: 0 auto;
 	margin-top: 10%;
-	width: 400px;
-	height: 300px;
-	background-color: blue;
+	width: 650px;
+	height: 350px;
+	/*background-color: blue;*/
 }
 
 #clock-holder{
-	width: 15%;
+	display: inline-block;
 	margin: 0 auto;
 	color: white;
-	font-size: 30px;
+	font-size: 50px;
+	font-family: helvetica-neue-bold;
+	letter-spacing: 3px;
 }

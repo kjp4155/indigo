@@ -7,6 +7,16 @@
     <script src="../p5.min.js"></script>
     <script src="../addons/p5.dom.min.js"></script>
     <script src="../addons/p5.sound.min.js"></script>
+    <script>
+      var myVar = setInterval(function() {
+        myTimer();
+      }, 1000);
+
+      function myTimer() {
+        var d = new Date();
+        document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+      }
+    </script>
   </head>
   <body>
     
@@ -14,6 +24,8 @@
       <!-- Our sketch will go here! -->
     </div>
     <p>&nbsp;</p>
-    <div id="clock-holder"> This is div tag! </div>
+    <div id="clock-holder">
+      <div id="clock"> </div>
+    </div>
   </body>
 </html>
