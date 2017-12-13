@@ -66,20 +66,20 @@ function timeDataParsing() {
     var type = arr[2];
     secs = parseInt(arr[3]); 
 
-    if( type.equals("dawn") == true ) dawn[x][y] = secs;
-    if( type.equals("dusk") == true ) dusk[x][y] = secs;
-    if( type.equals("goldenHour") == true ) goldenHour[x][y] = secs;  
-    if( type.equals("goldenHourEnd") == true ) goldenHourEnd[x][y] = secs; 
-    if( type.equals("nadir") == true ) nadir[x][y] = secs;  
-    if( type.equals("nauticalDawn") == true ) nauticalDawn[x][y] = secs;
-    if( type.equals("nauticalDusk") == true ) nauticalDusk[x][y] = secs;  
-    if( type.equals("night") == true )  night[x][y] = secs;
-    if( type.equals("nightEnd") == true ) nightEnd[x][y] = secs;  
-    if( type.equals("solarNoon") == true ) solarNoon[x][y] = secs;  
-    if( type.equals("sunrise") == true ) sunrise[x][y] = secs;  
-    if( type.equals("sunriseEnd") == true ) sunriseEnd[x][y] = secs;  
-    if( type.equals("sunset") == true ) sunset[x][y] = secs;  
-    if( type.equals("sunsetStart") == true ) sunsetStart[x][y] = secs;   
+    if( type === "dawn" ) dawn[x][y] = secs;
+    if( type === "dusk" ) dusk[x][y] = secs;
+    if( type === "goldenHour" ) goldenHour[x][y] = secs;  
+    if( type === "goldenHourEnd"  ) goldenHourEnd[x][y] = secs; 
+    if( type === "nadir"  ) nadir[x][y] = secs;  
+    if( type === "nauticalDawn"  ) nauticalDawn[x][y] = secs;
+    if( type === "nauticalDusk"  ) nauticalDusk[x][y] = secs;  
+    if( type === "night"  )  night[x][y] = secs;
+    if( type === "nightEnd"  ) nightEnd[x][y] = secs;  
+    if( type === "solarNoon"  ) solarNoon[x][y] = secs;  
+    if( type === "sunrise"  ) sunrise[x][y] = secs;  
+    if( type === "sunriseEnd"  ) sunriseEnd[x][y] = secs;  
+    if( type === "sunset"  ) sunset[x][y] = secs;  
+    if( type === "sunsetStart"  ) sunsetStart[x][y] = secs;   
     
   }
 }
