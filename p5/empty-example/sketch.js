@@ -188,6 +188,7 @@ function setup() {
 
 function draw() {
   setStatus();
+  background(0);
   for (var x=0; x<M; x++) {
     for (var y=0; y<N; y++) {
       if ( stat[x][y] == 0 ) fill(0, 0, 0);
