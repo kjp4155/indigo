@@ -134,6 +134,7 @@ function setStatus() {
 }
 var lines;
 function preload(){
+  init();
   // Get map data
   lines = loadStrings("./mapmap.txt");
   maplines = loadStrings("./res.txt");
@@ -141,7 +142,7 @@ function preload(){
 
 function setup() {
   createCanvas(1980, 1020);
-  init();
+  //init();
   background(0);
   pixelDensity(displayDensity());
   stroke(255);
@@ -165,7 +166,6 @@ function setup() {
   //println( "" + hour() + " : " + minute() + " : " + second() );
 
   timeDataParsing();
-  setStatus();
   noStroke();
   
 }
