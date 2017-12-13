@@ -15,3 +15,9 @@ body {
   /* This centers our sketch vertically. */
   align-items: center;
 }
+
+#clock-holder{
+	display: table-cell; vertical-align: middle;
+	color: white;
+	font-size: 30px;
+}
