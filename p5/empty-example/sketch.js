@@ -121,6 +121,9 @@ function preload(){
   var lines = loadStrings(filename);
   N = floor(lines.length);
   console.log(lines);
+  for(var i in lines){
+    console.log(i);
+  }
   console.log(lines.length);
   console.log(lines[1]);
   M = lines[0].length;
