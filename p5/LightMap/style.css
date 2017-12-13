@@ -17,7 +17,6 @@ body {
 }
 
 #clock-holder{
-	display: table-cell; vertical-align: middle;
 	color: white;
 	font-size: 30px;
 }
