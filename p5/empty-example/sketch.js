@@ -120,6 +120,8 @@ function preload(){
   // Get map data
   var lines = loadStrings(filename);
   N = floor(lines.length);
+  console.log(lines[0]);
+  console.log(lines[1]);
   M = lines[0].length;
   for (var i=0; i<lines.length; i++) {
     for (var j=0; j<lines[i].length; j++) {
