@@ -1,25 +1,40 @@
 var N, M;
 var x, y;
 var dotr = 6;
+var map = [];
+var dawn = [];
+var dusk = [];
+var goldenHour = [];
+var goldenHourEnd = [];
+var nadir = [];
+var nauticalDawn = [];
+var nauticalDusk = [];
+var night = [];
+var nightEnd = [];
+var solarNoon = [];
+var sunrise = [];
+var sunriseEnd = [];
+var sunset = [];
+var sunsetStart = [];
+var status = [];
 
 function init(){
-	var map = [];
-
-	var dawn = [];
-	var dusk = [];
-	var goldenHour = [];
-	var goldenHourEnd = [];
-	var nadir = [];
-	var nauticalDawn = [];
-	var nauticalDusk = [];
-	var night = [];
-	var nightEnd = [];
-	var solarNoon = [];
-	var sunrise = [];
-	var sunriseEnd = [];
-	var sunset = [];
-	var sunsetStart = [];
-	var status = [];
+	map = [];
+	dawn = [];
+	dusk = [];
+	goldenHour = [];
+	goldenHourEnd = [];
+	nadir = [];
+	nauticalDawn = [];
+	nauticalDusk = [];
+	night = [];
+	nightEnd = [];
+	solarNoon = [];
+	sunrise = [];
+	sunriseEnd = [];
+	sunset = [];
+	sunsetStart = [];
+	status = [];
 	for( var i = 0; i < 200; i ++){
 		map[i] = [];
 		dawn[i] = [];
