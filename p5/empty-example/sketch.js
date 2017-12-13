@@ -1,6 +1,5 @@
 var N, M;
 var x, y;
-var filename= "./mapmap.txt";
 var dotr = 6;
 
 function init(){
@@ -118,10 +117,10 @@ function setStatus() {
 var lines;
 function preload(){
   // Get map data
-  lines = loadStrings(filename);
+  lines = loadStrings("./mapmap.txt");
   maplines = loadStrings("./res.txt");
-
 }
+
 function setup() {
   createCanvas(1980, 1020);
   init();
@@ -141,7 +140,7 @@ function setup() {
   M = lines[0].length;
   for (var i=0; i<lines.length; i++) {
     for (var j=0; j<lines[i].length; j++) {
-      map[i][j] = lines[i].charAt(j) - '0';
+      map[i][j] = lines[i].charCodeAt(j) - 48;
     }
   }
   println("N = " + N + " M = " + M);
