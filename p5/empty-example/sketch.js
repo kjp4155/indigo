@@ -41,13 +41,12 @@ function init(){
 	}
 	
 }
-
+var maplines;
 function timeDataParsing() {
-  var lines = loadStrings("./res.txt");
-  for (var i=0; i<lines.length; i++) {
+  for (var i=0; i<maplines.length; i++) {
     var arr = []; 
     var secs = 0;
-    arr = lines[i].split(" ");
+    arr = maplines[i].split(" ");
     x = Integer.parseInt(arr[1]);
     y = Integer.parseInt(arr[0]);
     var type = arr[2];
@@ -116,9 +115,22 @@ function setStatus() {
     }
   }
 }
+var lines;
 function preload(){
   // Get map data
-  var lines = loadStrings(filename);
+  lines = loadStrings(filename);
+  maplines = loadStrings("./res.txt");
+
+}
+function setup() {
+  createCanvas(1980, 1020);
+  init();
+  background(0);
+  pixelDensity(displayDensity());
+  stroke(255);
+
+  x = 50; 
+  y = 50;
   N = floor(lines.length);
   console.log(lines);
   for(var i in lines){
@@ -138,17 +150,6 @@ function preload(){
   timeDataParsing();
   setStatus();
   noStroke();
-}
-function setup() {
-  createCanvas(1980, 1020);
-  init();
-  background(0);
-  pixelDensity(displayDensity());
-  stroke(255);
-
-  x = 50; 
-  y = 50;
-
   
 }
 
