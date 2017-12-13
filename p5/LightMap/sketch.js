@@ -156,9 +156,9 @@ function draw() {
       if ( stat[x][y] == 4 ) fill(0, 125, 125);
       if ( stat[x][y] > 10 ) fill(120,60,200);
       var t = stat[x][y];
-      dotr = 9;
+      dotr = 7;
       fill(t*30,t*30,t*30);
-      if ( map[y][x] == 1 ) ellipse(10+x*15, 10+y*15, dotr, dotr);
+      if ( map[y][x] == 1 ) ellipse(10+x*11, 10+y*11, dotr, dotr);
       //ellipse(10+x*10, 10+y*10, dotr, dotr);
     }
   }
