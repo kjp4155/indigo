@@ -3,12 +3,13 @@
 html, body {
   height: 100%;
   width: 100%;
+
 }
 
 body {
   margin: 0;
   display: flex;
-
+  display:inline-block;
   /* This centers our sketch horizontally. */
   justify-content: center;
 
@@ -16,7 +17,12 @@ body {
   align-items: center;
 }
 
+#sketch-holder{
+	display:inline-block;
+}
+
 #clock-holder{
+	display:inline-block;
 	color: white;
 	font-size: 30px;
 }
