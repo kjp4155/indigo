@@ -134,7 +134,24 @@ function setStatus() {
 }
 var lines;
 function preload(){
-  init();
+  for( var i = 0; i < 200; i ++){
+    map[i] = [];
+    dawn[i] = [];
+    dusk[i] = [];
+    goldenHour[i] = [];
+    goldenHourEnd[i] = [];
+    nadir[i] = [];
+    nauticalDawn[i] = [];
+    nauticalDusk[i] = [];
+    night[i] = [];
+    nightEnd[i] = [];
+    solarNoon[i] = [];
+    sunrise[i] = [];
+    sunriseEnd[i] = [];
+    sunset[i] = [];
+    sunsetStart[i] = [];
+    status[i] = [];
+  }
   // Get map data
   lines = loadStrings("./mapmap.txt");
   maplines = loadStrings("./res.txt");
