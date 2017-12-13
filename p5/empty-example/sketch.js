@@ -61,10 +61,10 @@ function timeDataParsing() {
     var arr = []; 
     var secs = 0;
     arr = maplines[i].split(" ");
-    x = Integer.parseInt(arr[1]);
-    y = Integer.parseInt(arr[0]);
+    x = parseInt(arr[1]);
+    y = parseInt(arr[0]);
     var type = arr[2];
-    secs = Integer.parseInt(arr[3]); 
+    secs = parseInt(arr[3]); 
 
     if( type.equals("dawn") == true ) dawn[x][y] = secs;
     if( type.equals("dusk") == true ) dusk[x][y] = secs;
