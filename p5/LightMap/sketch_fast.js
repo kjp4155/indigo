@@ -68,10 +68,11 @@ function timeDataParsing() {
   }
 }
 
+var curtime = 0;
 
 function setStatus() {
   var d = new Date();
-  var curtime = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds()*1800;
+  curtime = curtime + 1800;
   curtime = curtime % (24*3600);
   console.log(curtime);
   for (var x=0; x<M; x++) {
@@ -114,7 +115,7 @@ function setStatus() {
 var lines;
 function preload(){
   init();
-
+  curtime = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds()*1800;
   // Get map data
   lines = loadStrings("./mapmap.txt");
   maplines = loadStrings("./res.txt");
@@ -123,7 +124,7 @@ function preload(){
 function setup() {
   var canvas = createCanvas(600, 350);
   canvas.parent('sketch-holder');
-  frameRate(3);
+  frameRate(1);
   background(0);
   pixelDensity(displayDensity());
   stroke(255);
