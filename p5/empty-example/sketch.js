@@ -120,8 +120,8 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1920, 1080);
-  //init();
+  var canvas = createCanvas(1920, 1080);
+  canvas.parent('sketch-holder');
   frameRate(3);
   background(0);
   pixelDensity(displayDensity());
