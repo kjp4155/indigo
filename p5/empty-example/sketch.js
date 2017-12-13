@@ -16,7 +16,7 @@ var sunrise = [];
 var sunriseEnd = [];
 var sunset = [];
 var sunsetStart = [];
-var status = [];
+var stat = [];
 
 function init(){
 	map = [];
@@ -34,7 +34,7 @@ function init(){
 	sunriseEnd = [];
 	sunset = [];
 	sunsetStart = [];
-	status = [];
+	stat = [];
 	for( var i = 0; i < 200; i ++){
 		map[i] = [];
 		dawn[i] = [];
@@ -51,7 +51,7 @@ function init(){
 		sunriseEnd[i] = [];
 		sunset[i] = [];
 		sunsetStart[i] = [];
-		status[i] = [];
+		stat[i] = [];
 	}
 	
 }
@@ -92,12 +92,12 @@ function setStatus() {
   for (var x=0; x<M; x++) {
     for (var y=0; y<N; y++) {
       var tmp = 99999999;
-      console.log(x + " " + y + " " + status[x][y]);
-      status[x][y] = 100;
+      console.log(x + " " + y + " " + stat[x][y]);
+      stat[x][y] = 100;
       /*
       tmp = curtime-dawn[x][y]; if( tmp < 0 ) tmp += dsecs;
       if( tmp < mn ){
-        mn = tmp; status[x][y] = 1;
+        mn = tmp; stat[x][y] = 1;
       }
       */
       if( dawn[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-dawn[x][y]));
@@ -115,20 +115,20 @@ function setStatus() {
       if( sunset[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-sunset[x][y]));
       if( sunsetStart[x][y] != -1 ) tmp = Math.min(tmp,Math.abs(curtime-sunsetStart[x][y]));
       
-      if( tmp == Math.abs(curtime-sunrise[x][y] ) ) status[x][y] = 4;
-      if( tmp == Math.abs(curtime-sunriseEnd[x][y] ) ) status[x][y] = 3;
-      if( tmp == Math.abs(curtime-goldenHourEnd[x][y] ) ) status[x][y] = 2;
-      if( tmp == Math.abs(curtime-solarNoon[x][y] ) ) status[x][y] = 1;
-      if( tmp == Math.abs(curtime-goldenHour[x][y] ) ) status[x][y] = 0;
-      if( tmp == Math.abs(curtime-sunsetStart[x][y] ) ) status[x][y] = 1;
-      if( tmp == Math.abs(curtime-sunset[x][y] ) ) status[x][y] = 2;
-      if( tmp == Math.abs(curtime-dusk[x][y] ) ) status[x][y] = 3;
-      if( tmp == Math.abs(curtime-nauticalDusk[x][y] ) ) status[x][y] = 4;
-      if( tmp == Math.abs(curtime-night[x][y] ) ) status[x][y] = 5;
-      if( tmp == Math.abs(curtime-nadir[x][y] ) ) status[x][y] = 6;
-      if( tmp == Math.abs(curtime-nightEnd[x][y] ) ) status[x][y] = 7;
-      if( tmp == Math.abs(curtime-nauticalDawn[x][y] ) ) status[x][y] = 6;
-      if( tmp == Math.abs(curtime-dawn[x][y] ) ) status[x][y] = 5;
+      if( tmp == Math.abs(curtime-sunrise[x][y] ) ) stat[x][y] = 4;
+      if( tmp == Math.abs(curtime-sunriseEnd[x][y] ) ) stat[x][y] = 3;
+      if( tmp == Math.abs(curtime-goldenHourEnd[x][y] ) ) stat[x][y] = 2;
+      if( tmp == Math.abs(curtime-solarNoon[x][y] ) ) stat[x][y] = 1;
+      if( tmp == Math.abs(curtime-goldenHour[x][y] ) ) stat[x][y] = 0;
+      if( tmp == Math.abs(curtime-sunsetStart[x][y] ) ) stat[x][y] = 1;
+      if( tmp == Math.abs(curtime-sunset[x][y] ) ) stat[x][y] = 2;
+      if( tmp == Math.abs(curtime-dusk[x][y] ) ) stat[x][y] = 3;
+      if( tmp == Math.abs(curtime-nauticalDusk[x][y] ) ) stat[x][y] = 4;
+      if( tmp == Math.abs(curtime-night[x][y] ) ) stat[x][y] = 5;
+      if( tmp == Math.abs(curtime-nadir[x][y] ) ) stat[x][y] = 6;
+      if( tmp == Math.abs(curtime-nightEnd[x][y] ) ) stat[x][y] = 7;
+      if( tmp == Math.abs(curtime-nauticalDawn[x][y] ) ) stat[x][y] = 6;
+      if( tmp == Math.abs(curtime-dawn[x][y] ) ) stat[x][y] = 5;
     }
   }
 }
@@ -150,11 +150,11 @@ function preload(){
     sunriseEnd[i] = [];
     sunset[i] = [];
     sunsetStart[i] = [];
-    status[i] = [];
+    stat[i] = [];
   }
   for( var i = 0 ; i < 200 ; i ++ ){
     for( var j = 0 ; j < 200 ; j ++ ){
-      status[i][j] = 0;
+      stat[i][j] = 0;
     }
   }
   // Get map data
@@ -196,13 +196,13 @@ function draw() {
   setStatus();
   for (var x=0; x<M; x++) {
     for (var y=0; y<N; y++) {
-      if ( status[x][y] == 0 ) fill(0, 0, 0);
-      if ( status[x][y] == 1 ) fill(0, 125, 0);
-      if ( status[x][y] == 2 ) fill(125, 0, 0);
-      if ( status[x][y] == 3 ) fill(0, 0, 125);
-      if ( status[x][y] == 4 ) fill(0, 125, 125);
-      if ( status[x][y] > 10 ) fill(120,60,200);
-      var t = status[x][y];
+      if ( stat[x][y] == 0 ) fill(0, 0, 0);
+      if ( stat[x][y] == 1 ) fill(0, 125, 0);
+      if ( stat[x][y] == 2 ) fill(125, 0, 0);
+      if ( stat[x][y] == 3 ) fill(0, 0, 125);
+      if ( stat[x][y] == 4 ) fill(0, 125, 125);
+      if ( stat[x][y] > 10 ) fill(120,60,200);
+      var t = stat[x][y];
      
       fill(t*30,t*30,t*30);
       if ( map[y][x] == 1 ) ellipse(10+x*10, 10+y*10, dotr, dotr);
