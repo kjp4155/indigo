@@ -92,6 +92,7 @@ function setStatus() {
   for (var x=0; x<M; x++) {
     for (var y=0; y<N; y++) {
       var tmp = 99999999;
+      console.log(x + " " + y + " " + status[x][y]);
       status[x][y] = 100;
       /*
       tmp = curtime-dawn[x][y]; if( tmp < 0 ) tmp += dsecs;
