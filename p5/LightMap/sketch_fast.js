@@ -71,7 +71,7 @@ function timeDataParsing() {
 
 function setStatus() {
   var d = new Date();
-  var curtime = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds()*1800;
+  var curtime = d.getHours()*3600 + d.getMinutes()*60 + (d.getSeconds()%24)*1800;
   
   for (var x=0; x<M; x++) {
     for (var y=0; y<N; y++) {
