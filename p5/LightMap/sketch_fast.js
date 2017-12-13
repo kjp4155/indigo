@@ -115,6 +115,7 @@ function setStatus() {
 var lines;
 function preload(){
   init();
+  var d = new Date();
   curtime = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds()*1800;
   // Get map data
   lines = loadStrings("./mapmap.txt");
