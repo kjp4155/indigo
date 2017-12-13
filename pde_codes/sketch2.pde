@@ -1,7 +1,7 @@
 int N, M;
 int x, y;
 int[][] map = new int[1050][1050];
-String filename= "mapmap.txt";
+String filename= "../pde_codes/mapmap.txt";
 int dotr = 6;
 int[][] dawn = new int[200][200];
 int[][] dusk = new int[200][200];
@@ -20,7 +20,7 @@ int[][] sunsetStart = new int[200][200];
 int[][] status = new int[200][200];
 
 void timeDataParsing() {
-  String[] lines = loadStrings("./res.txt");
+  String[] lines = loadStrings("../pde_codes/res.txt");
   for (int i=0; i<lines.length; i++) {
     String[] arr; 
     int secs = 0;
