@@ -152,6 +152,11 @@ function preload(){
     sunsetStart[i] = [];
     status[i] = [];
   }
+  for( var i = 0 ; i < 200 ; i ++ ){
+    for( var j = 0 ; j < 200 ; j ++ ){
+      status[i][j] = 0;
+    }
+  }
   // Get map data
   lines = loadStrings("./mapmap.txt");
   maplines = loadStrings("./res.txt");
