@@ -71,8 +71,7 @@ function timeDataParsing() {
 var curtime = 0;
 
 function setStatus() {
-  var d = new Date();
-  curtime = curtime + 1800;
+  curtime = curtime + 1800 + 1;
   curtime = curtime % (24*3600);
   console.log(curtime);
   for (var x=0; x<M; x++) {
@@ -116,7 +115,7 @@ var lines;
 function preload(){
   init();
   var d = new Date();
-  curtime = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds()*1800;
+  curtime = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds();
   // Get map data
   lines = loadStrings("./mapmap.txt");
   maplines = loadStrings("./res.txt");
