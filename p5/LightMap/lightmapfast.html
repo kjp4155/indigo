@@ -12,9 +12,12 @@
       var myVar = setInterval(function() {
         myTimer();
       }, 1000);
-
+      var t=setInterval(addTime,1000);
+      var d = new Date();
+      function addTime(){
+        d.setTime( d.getTime() + 1000 * 1800 + 1000);
+      }
       function myTimer() {
-        var d = new Date();
         document.getElementById("clock").innerHTML = d.toLocaleTimeString();
       }
     </script>
