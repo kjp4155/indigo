@@ -4,6 +4,14 @@
 	font-family: helvetica-neue-bold;
 	src: url('./helveticaneue_bold.ttf');
 }
+@font-face{
+	font-family: helvetica-neue-thin;
+	src: url('./helveticaneue_thin.ttf');
+}
+@font-face{
+	font-family: helvetica-neue-light;
+	src: url('./helveticaneue_light.ttf');
+}
 
 html, body {
   width: 100%;
@@ -19,7 +27,7 @@ body {
 
 #sketch-holder{
 	margin: 0 auto;
-	margin-top: 10%;
+	margin-top: 15%;
 	width: 650px;
 	height: 350px;
 	/*background-color: blue;*/
@@ -31,6 +39,6 @@ body {
 	margin-top: 3%;
 	color: white;
 	font-size: 55px;
-	font-family: helvetica-neue-bold;
+	font-family: helvetica-neue-thin;
 	letter-spacing: 3px;
 }
