@@ -30,7 +30,7 @@ layout: page
 
 <h2> Skills </h2>
 
-<p> Comfortable Launguages: C/C++, Java, Python3, HTML </p>
+<p> Comfortable Launguages: C/C++, Java, Python3 </p>
 <p> Comfortable Frameworks: Django, JSP</p>
 
 <h2> Project Experience </h2>
@@ -38,15 +38,15 @@ layout: page
 <p> Fullstack developer at Samsung SDS Sgen Membership program (2014-2016) </p>
 <p> Backend developer at <a href="https://github.com/SNUWagon">snuwagon.com</a> (2018 SWPP class)</p>
 <p> 
-	<a href="./../p5/LightMap/lightmap.html"> Lightmap </a>  
-	<a href="./../p5/LightMap/lightmapfast.html">(Faster Version) </a> 
+	<a href="./../p5/LightMap/lightmap.html"> Lightmap</a>  
+	<a href="./../p5/LightMap/lightmapfast.html"> &npsp;&npsp;&npsp;(Faster Version) </a> 
 </p>
 
 <h2> Taken Courses </h2>
 
-<p> (2016 Spring) Discrete Mathematics, Automata Theory, Computer Architecture, Logic Design, Data Structures</p>
-<p> (2016 Fall) Philosophical Understanding of Science, Logic, Electrical and Electronic Circuits </p>
-<p> (2017 Spring) Database, Hardware System Design, Algorithms, Creative Integrated Design, Computer Programming</p>
-<p> (2017 Fall) Linear Algebra, Patent and Technology Entreprenurship, Mathematical Analysis</p>
 <p> (2018 Spring) Number Theory, Linear & Non-linear Computation Models, Principles and Practices of Software Development, System Programming</p>
+<p> (2017 Fall) Linear Algebra, Patent and Technology Entreprenurship, Mathematical Analysis</p>
+<p> (2017 Spring) Database, Hardware System Design, Algorithms, Creative Integrated Design, Computer Programming</p>
+<p> (2016 Fall) Philosophical Understanding of Science, Logic, Electrical and Electronic Circuits </p>
+<p> (2016 Spring) Discrete Mathematics, Automata Theory, Computer Architecture, Logic Design, Data Structures</p>
 
