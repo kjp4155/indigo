@@ -21,7 +21,9 @@ layout: page
 <p> LG Code monster - 3rd place award (3등상) </p>
 <p> Google Code Jam Round3 - 182th place </p>
 <p> Kakao Code Festival onsite final </p>
-<p> SCPC onsite final </p>
+<p> S
+
+CPC onsite final </p>
 
 <h2> Awards - 2016 </h2>
 
